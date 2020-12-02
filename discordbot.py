@@ -44,26 +44,26 @@ async def gyu(ctx):
 
 @bot.command()
 async def jincome(ctx):
-    await ctx.send('@566444794734444555早く来いよ ') 
+    await ctx.send('<@566444794734444555>早く来いよ ') 
     
     
 @bot.command()
 async def yukeycome(ctx):
-    await ctx.send('@579665819445887006早く来いよ ')     
+    await ctx.send('<@579665819445887006>早く来いよ ')     
             
     
 @bot.command()
 async def yuucome(ctx):
-    await ctx.send('@588781728257015821早く来いよ ')     
+    await ctx.send('<@588781728257015821>早く来いよ ')     
     
     
 @bot.command()
 async def nokicome(ctx):
-    await ctx.send('@579665819445887006早く来いよ ')    
+    await ctx.send('<@579665819445887006>早く来いよ ')    
     
 @bot.command()
 async def gyucome(ctx):
-    await ctx.send('@605025536867303434早く来いよ ') 
+    await ctx.send('<@605025536867303434>早く来いよ ') 
     
     
 
