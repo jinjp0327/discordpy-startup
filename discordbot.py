@@ -49,7 +49,7 @@ async def jincome(ctx):
     
 @bot.command()
 async def yukeycome(ctx):
-    await ctx.send('<@579665819445887006>早く来いよ ')     
+    await ctx.send('<@435358191971336204>早く来いよ ')     
             
     
 @bot.command()
