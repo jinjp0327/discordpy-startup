@@ -66,6 +66,15 @@ async def gyucome(ctx):
     await ctx.send('<@605025536867303434>早く来いよ ') 
     
     
+global voich
+# 接続
+if message.content.startswith('/connect'):
+    voich = await discord.VoiceChannel.connect(message.author.voice.channel)
+# 切断
+if message.content.startswith('/discon'):
+    await voich.disconnect()    
+    
+    
 
     
     
