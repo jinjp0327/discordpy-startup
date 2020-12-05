@@ -67,7 +67,7 @@ async def gyucome(ctx):
     
 @bot.command()
 async def mac(ctx):
-    await ctx.send(':hamburger:') 
+    await ctx.send(':hamburger: ') 
         
     
 @bot.command()
