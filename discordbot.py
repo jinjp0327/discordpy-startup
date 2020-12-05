@@ -71,7 +71,7 @@ async def mac(ctx):
 
 @bot.command()
 async def kuramasu(ctx):
-    await ctx.send('<742741011163250759>')
+    await ctx.send('<@742741011163250759>')
     
 @bot.command(name='server')
 async def fetchServerInfo(context):
