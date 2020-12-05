@@ -78,11 +78,27 @@ async def fetchServerInfo(context):
 	await context.send(f'Server Name: {guild.owner.display_name}') 
 	
 	
-@bot.command(pass_context=True)
-async def join(ctx):
-author = ctx.message.author
-channel = author.voice_channel
-await bot.join_voice_channel(channel)
-	
+@client.event
+async def on_message(message):
+    print(f"{message.channel}: {message.author}: {message.author.name}: {message.content}")
+    sentdex_guild = client.get_guild(405403391410438165)
+
+    if "sentdebot.member_count" == message.content.lower():
+        await message.channel.send(f"```{sentdex_guild.member_count}```")
+	elif "sentdebot.community_report()" == message.content.lower():
+        online = 0
+        idle = 0
+        offline = 0
+
+        for m in sentdex_guild.members:
+            if str(m.status) == "online":
+                online += 1
+            if str(m.status) == "offline":
+                offline += 1
+            else:
+                idle += 1
+
+        await message.channel.send(f"```Online: {online}.\nIdle/busy/dnd: {idle}.\nOffline: {offline}```")
+
     
 bot.run(token)
