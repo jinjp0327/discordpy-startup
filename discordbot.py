@@ -6,11 +6,6 @@ bot = commands.Bot(command_prefix='/')
 token = os.environ['DISCORD_BOT_TOKEN']
 
 
-@bot.event
-async def on_command_error(ctx, error):
-    orig_error = getattr(error, "original", error)
-    error_msg = ''.join(traceback.TracebackException.from_exception(orig_error).format())
-    await ctx.send(error_msg)
 
 
 @bot.command()
@@ -97,6 +92,11 @@ async def fetchServerInfo(context):
 	await context.send(f'server Name: {guild.name}')
 	await context.send(f'server Size: {len(guild.members)}')
 	await context.send(f'Server Name: {guild.owner.display_name}') 
+	
+async def send_error_message(self,error):
+    embed = discord.Embed(title="ヘルプ表示のエラー",description=error,
+        color=0xff0000)
+    await self.get_destination().send(embed=embed)	
 	
 
     
