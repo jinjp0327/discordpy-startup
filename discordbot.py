@@ -93,11 +93,7 @@ async def fetchServerInfo(context):
 	await context.send(f'server Size: {len(guild.members)}')
 	await context.send(f'Server Name: {guild.owner.display_name}') 
 	
-async def send_error_message(self,error):
-    embed = discord.Embed(title="ヘルプ表示のエラー",description=error,
-        color=0xff0000)
-    await self.get_destination().send(embed=embed)	
-	
+
 
     
 bot.run(token)
