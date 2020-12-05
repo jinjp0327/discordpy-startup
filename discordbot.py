@@ -11,9 +11,8 @@ async def on_command_error(ctx, error):
     error_msg = ''.join(traceback.TracebackException.from_exception(orig_error).format())
     await ctx.send(error_msg)
 
-@bot.event
-async def on_ready():
-await bot.change_presence(activity=discord.Game(f"ゆーけーいじめ")
+activity = discord.Activity(name='yukey izime', type=discord.ActivityType.watching)
+await client.change_presence(activity=activity)
 
 @bot.command()
 async def ping(ctx):
