@@ -73,6 +73,22 @@ async def mac(ctx):
 async def kuramasu(ctx):
     await ctx.send('<@&742741011163250759>')
 
+@bot.command()
+async def ateam(ctx):
+    await ctx.send('<@&754414375850344528>')
+
+@bot.command()
+async def bteam(ctx):
+    await ctx.send('<@&754414423267082240>')
+
+@bot.command()
+async def bteam(ctx):
+    await ctx.send('<@&742740658694914088>')
+
+@bot.command()
+async def bteam(ctx):
+    await ctx.send('<@&784767086752169984>')
+
  
 @bot.command(name='server')
 async def fetchServerInfo(context):
@@ -82,10 +98,6 @@ async def fetchServerInfo(context):
 	await context.send(f'server Size: {len(guild.members)}')
 	await context.send(f'Server Name: {guild.owner.display_name}') 
 	
-	
-	
-	
-
 
     
 bot.run(token)
