@@ -66,7 +66,7 @@ async def gyucome(ctx):
     await ctx.send('<@605025536867303434>早く来いよ ') 
     
 @bot.command()
-async def gyucome(ctx):
+async def mac(ctx):
     await ctx.send(':hamburger:') 
         
     
