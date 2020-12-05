@@ -81,11 +81,11 @@ async def bteam(ctx):
     await ctx.send('<@&754414423267082240>')
 
 @bot.command()
-async def bteam(ctx):
+async def boss(ctx):
     await ctx.send('<@&742740658694914088>')
 
 @bot.command()
-async def bteam(ctx):
+async def anarisuto(ctx):
     await ctx.send('<@&784767086752169984>')
 
  
