@@ -73,8 +73,16 @@ async def mac(ctx):
 async def fetchServerInfo(context):
 	guild = context.guild
 	
-	await context.send(f'サーバー名: {guild.name}')
-	await context.send(f'サーバーサイズ: {len(guild.members)}')
-	await context.send(f'Server Name: {guild.owner.display_name}')    
+	await context.send(f'server Name: {guild.name}')
+	await context.send(f'server Size: {len(guild.members)}')
+	await context.send(f'Server Name: {guild.owner.display_name}') 
+	
+	
+@bot.command(pass_context=True)
+async def join(ctx):
+author = ctx.message.author
+channel = author.voice_channel
+await bot.join_voice_channel(channel)
+	
     
 bot.run(token)
