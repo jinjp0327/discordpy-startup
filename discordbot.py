@@ -89,27 +89,6 @@ async def boss(ctx):
 async def anarisuto(ctx):
     await ctx.send('<@&784767086752169984>')
 
-async def send_bot_help(self,mapping):
-    content = ""
-    for cog in mapping:
-        # 各コグのコマンド一覧を content に追加していく
-        command_list = await self.filter_commands(mapping[cog])
-        if not command_list:
-            # 表示できるコマンドがないので、他のコグの処理に移る
-            continue
-        if cog is None:
-            # コグが未設定のコマンドなので、no_category属性を参照する
-            content += f"```\n{self.no_category}```"
-        else:
-            content += f"```\n{cog.qualified_name} / {cog.description}\n```"
-        for command in command_list:
-            content += f"`{command.name}` / {command.description}\n"
-        content += "\n"
-    embed = discord.Embed(title="コマンドリスト",
-        description=content,color=0x00ff00)
-    embed.set_footer(text=f"コマンドのヘルプ {self.context.prefix}help コマンド名")
-    await self.get_destination().send(embed=embed)
-
  
 @bot.command(name='server')
 async def fetchServerInfo(context):
