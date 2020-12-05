@@ -69,4 +69,12 @@ async def gyucome(ctx):
 async def mac(ctx):
     await ctx.send(':hamburger:')
     
+@bot.command(name='server')
+async def fetchServerInfo(context):
+	guild = context.guild
+	
+	await context.send(f'サーバー名: {guild.name}')
+	await context.send(f'サーバーサイズ: {len(guild.members)}')
+	await context.send(f'Server Name: {guild.owner.display_name}')    
+    
 bot.run(token)
