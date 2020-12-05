@@ -65,6 +65,11 @@ async def nokicome(ctx):
 async def gyucome(ctx):
     await ctx.send('<@605025536867303434>早く来いよ ') 
     
+@bot.command()
+async def gyucome(ctx):
+    await ctx.send(':hamburger:') 
+        
+    
     
 
     
