@@ -65,14 +65,7 @@ async def nokicome(ctx):
 async def gyucome(ctx):
     await ctx.send('<@605025536867303434>早く来いよ ') 
     
-@bot.command()
-async def mac(ctx):
-    await ctx.send(':hamburger: ') 
-        
-    
-@bot.command()
-async def joined(ctx, *, member: discord.Member):
-    await ctx.send('{0} joined on {0.joined_at}'.format(member))    
+ 
 
     
     
