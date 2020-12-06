@@ -5,7 +5,7 @@ import traceback
 bot = commands.Bot(command_prefix='/')
 token = os.environ['DISCORD_BOT_TOKEN']
 
-
+await bot.change_presence(activity=discord.Game(name="yukey いじめ"))
 
 
 @bot.event
