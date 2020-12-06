@@ -12,7 +12,17 @@ async def on_command_error(ctx, error):
     error_msg = ''.join(traceback.TracebackException.from_exception(orig_error).format())
     await ctx.send(error_msg)
 
+class JapaneseHelpCommand(commands.DefaultHelpCommand):
+    def __init__(self, prefix):
+        super().__init__()
+        self.commands_heading = "コマンド:"
+        self.no_category = "その他"
+        self.command_attrs["help"] = "コマンド一覧と簡単な説明を表示"
+        self.command_prefix = prefix
 
+    def get_ending_note(self):
+        return (f"各コマンドの説明: {self.command_prefix}help <コマンド名>\n"
+                f"各カテゴリの説明: {self.command_prefix}help <カテゴリ名>\n")
 
 @bot.command()
 async def ping(ctx):
