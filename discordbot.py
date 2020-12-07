@@ -42,10 +42,7 @@ async def noki(ctx):
 async def gyu(ctx):
     await ctx.send(':fingers_crossed:')     
 
-@bot.cmmands()
-async def yukeyizime(ctx):
-    await ctx.send('https://media.giphy.com/media/JIX9t2j0ZTN9S/giphy.gif')
-    
+
 
 @bot.command()
 async def jincome(ctx):
