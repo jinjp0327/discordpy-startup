@@ -20,55 +20,55 @@ async def ping(ctx):
     
 @bot.command()
 async def jin(ctx):
-    await ctx.send(':sunglasses: ') 
+    await ctx.send(':sunglasses:cc) 
     
     
 @bot.command()
 async def yukey(ctx):
-    await ctx.send(':toilet: ') 
+    await ctx.send(':toilet:') 
     
     
 @bot.command()
 async def yuu(ctx):
-    await ctx.send(':poop: ') 
+    await ctx.send(':poop:') 
     
     
 @bot.command()
 async def noki(ctx):
-    await ctx.send(':cupid: ')   
+    await ctx.send(':cupid:')   
     
     
 @bot.command()
 async def gyu(ctx):
-    await ctx.send(':fingers_crossed:  ')     
+    await ctx.send(':fingers_crossed:')     
 
 @bot.cmmands()
 async def ゆーけーいじめ(ctx):
-    await ctx.send("https://media.giphy.com/media/JIX9t2j0ZTN9S/giphy.gif")
+    await ctx.send('https://media.giphy.com/media/JIX9t2j0ZTN9S/giphy.gif')
     
 
 @bot.command()
 async def jincome(ctx):
-    await ctx.send('<@566444794734444555>早く来いよ ') 
+    await ctx.send('<@566444794734444555>早く来いよ') 
     
     
 @bot.command()
 async def yukeycome(ctx):
-    await ctx.send('<@435358191971336204>早く来いよ ')     
+    await ctx.send('<@435358191971336204>早く来いよ')     
             
     
 @bot.command()
 async def yuucome(ctx):
-    await ctx.send('<@588781728257015821>早く来いよ ')     
+    await ctx.send('<@588781728257015821>早く来いよ')     
     
     
 @bot.command()
 async def nokicome(ctx):
-    await ctx.send('<@579665819445887006>早く来いよ ')    
+    await ctx.send('<@579665819445887006>早く来いよ')    
     
 @bot.command()
 async def gyucome(ctx):
-    await ctx.send('<@605025536867303434>早く来いよ ') 
+    await ctx.send('<@605025536867303434>早く来いよ') 
     
 @bot.command()
 async def mac(ctx):
