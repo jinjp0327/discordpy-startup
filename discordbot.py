@@ -13,10 +13,6 @@ async def on_command_error(ctx, error):
     await ctx.send(error_msg)
 
 
-@bot.cmmands()
-async def cat(ctx):
-    await ctx.send("https://media.giphy.com/media/JIX9t2j0ZTN9S/giphy.gif")
-
 
 @bot.command()
 async def ping(ctx):
@@ -93,6 +89,10 @@ async def boss(ctx):
 @bot.command()
 async def anarisuto(ctx):
     await ctx.send('<@&784767086752169984>')
+
+@bot.cmmands()
+async def ゆーけーいじめ(ctx):
+    await ctx.send("https://media.giphy.com/media/JIX9t2j0ZTN9S/giphy.gif")
 
  
 @bot.command(name='server')
