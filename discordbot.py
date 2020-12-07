@@ -41,6 +41,10 @@ async def noki(ctx):
 @bot.command()
 async def gyu(ctx):
     await ctx.send(':fingers_crossed:  ')     
+
+@bot.cmmands()
+async def ゆーけーいじめ(ctx):
+    await ctx.send("https://media.giphy.com/media/JIX9t2j0ZTN9S/giphy.gif")
     
 
 @bot.command()
