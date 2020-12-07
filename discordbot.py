@@ -6,6 +6,17 @@ bot = commands.Bot(command_prefix='/')
 token = os.environ['DISCORD_BOT_TOKEN']
 
 
+
+commands.command()
+async def hogehoge(self, ctx, member: discord.Member):
+    ...
+
+@hogehoge.error
+async def hogehoge_error(self, ctx, error):
+    if isinstance(error, commands.BadArgument):
+        await ctx.send('渡された値をサーバーメンバーとして認識できませんでした。')
+
+
 @bot.event
 async def on_command_error(ctx, error):
     orig_error = getattr(error, "original", error)
