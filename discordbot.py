@@ -34,7 +34,12 @@ async def noki(ctx):
     
 @bot.command()
 async def gyu(ctx):
-    await ctx.send(':fingers_crossed:')     
+    await ctx.send(':fingers_crossed:')  
+		   
+		   
+@bot.command()
+async def mac(ctx):
+    await ctx.send(':hamburger:')
 @bot.command()
 async def jincome(ctx):
     await ctx.send('<@566444794734444555>早く来いよ') 
@@ -59,9 +64,6 @@ async def gyucome(ctx):
     await ctx.send('<@605025536867303434>早く来いよ') 
     
 @bot.command()
-async def mac(ctx):
-    await ctx.send(':hamburger:')
-@bot.command()
 async def kuramasu(ctx):
     await ctx.send('<@&742741011163250759>')
 @bot.command()
@@ -76,17 +78,19 @@ async def boss(ctx):
 @bot.command()
 async def anarisuto(ctx):
     await ctx.send('<@&784767086752169984>')
-	   
+
 
 
 
 @bot.command(name='server')
 async def fetchServerInfo(context):
 	guild = context.guild
-	
+
 	await context.send(f'server Name: {guild.name}')
 	await context.send(f'server Size: {len(guild.members)}')
 	await context.send(f'Server Name: {guild.owner.display_name}') 
-	
-    
+
+
+
+
 bot.run(token)
