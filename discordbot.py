@@ -93,12 +93,12 @@ async def boss(ctx):
 @bot.command()
 async def anarisuto(ctx):
     await ctx.send('<@&784767086752169984>')
+		   
 
 @bot.command()
 async def yukeyizime(ctx):
-    await ctx.send('https://media.giphy.com/media/JIX9t2j0ZTN9S/giphy.gif')
+    await ctx.send('https://media.giphy.com/media/JIX9t2j0ZTN9S/giphy.gif')		   
 
-https://media.giphy.com/media/JIX9t2j0ZTN9S/giphy.gif
  
 @bot.command(name='server')
 async def fetchServerInfo(context):
