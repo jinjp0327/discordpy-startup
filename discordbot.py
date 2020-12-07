@@ -6,7 +6,11 @@ bot = commands.Bot(command_prefix='/')
 token = os.environ['DISCORD_BOT_TOKEN']
 
 
-
+@bot.event
+async def on_command_error(ctx, error):
+    orig_error = getattr(error, "original", error)
+    error_msg = ''.join(traceback.TracebackException.from_exception(orig_error).format())
+    await ctx.send(error_msg)
 
 
 @bot.command()
@@ -35,8 +39,12 @@ async def noki(ctx):
     
 @bot.command()
 async def gyu(ctx):
-    await ctx.send(':fingers_crossed:')     
-
+    await ctx.send(':fingers_crossed:')  
+		   
+		   
+@bot.command()
+async def mac(ctx):
+    await ctx.send(':hamburger:')
 
 
 @bot.command()
@@ -62,9 +70,6 @@ async def nokicome(ctx):
 async def gyucome(ctx):
     await ctx.send('<@605025536867303434>早く来いよ') 
     
-@bot.command()
-async def mac(ctx):
-    await ctx.send(':hamburger:')
 
 @bot.command()
 async def kuramasu(ctx):
