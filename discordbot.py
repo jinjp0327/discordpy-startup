@@ -8,6 +8,9 @@ async def on_command_error(ctx, error):
     orig_error = getattr(error, "original", error)
     error_msg = ''.join(traceback.TracebackException.from_exception(orig_error).format())
     await ctx.send(error_msg)
+
+
+
 @bot.command()
 async def ping(ctx):
     await ctx.send('pong')
@@ -40,6 +43,8 @@ async def gyu(ctx):
 @bot.command()
 async def mac(ctx):
     await ctx.send(':hamburger:')
+		   
+		   
 @bot.command()
 async def jincome(ctx):
     await ctx.send('<@566444794734444555>早く来いよ') 
