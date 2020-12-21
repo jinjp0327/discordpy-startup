@@ -89,14 +89,6 @@ async def anarisuto(ctx):
 
 
 
-@bot.command(name='server')
-async def fetchServerInfo(context):
-	guild = context.guild
-
-	await context.send(f'server Name: {guild.name}')
-	await context.send(f'server Size: {len(guild.members)}')
-	await context.send(f'Server Name: {guild.owner.display_name}') 
-
 
 
 
