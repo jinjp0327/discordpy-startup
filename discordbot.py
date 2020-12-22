@@ -74,15 +74,23 @@ async def gyucome(ctx):
 @bot.command()
 async def kuramasu(ctx):
     await ctx.send('<@&742741011163250759>')
+		   
+		   
 @bot.command()
 async def ateam(ctx):
     await ctx.send('<@&754414375850344528>')
+		   
+		   
 @bot.command()
 async def bteam(ctx):
     await ctx.send('<@&754414423267082240>')
+		   
+		   
 @bot.command()
 async def boss(ctx):
     await ctx.send('<@&742740658694914088>')
+		   
+		   
 @bot.command()
 async def anarisuto(ctx):
     await ctx.send('<@&784767086752169984>')
