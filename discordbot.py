@@ -4,7 +4,7 @@ import traceback
 
 bot = commands.Bot(command_prefix='/')
 
-token = os.environ['NzcwMjYzNjMyMjgxNjAwMDEw.X5bB6A.b1LuBg_pi56pryMhDoatPYAWR3U']
+TOKEN = 'NzcwMjYzNjMyMjgxNjAwMDEw.X5bB6A.b1LuBg_pi56pryMhDoatPYAWR3U'
 
 
 
@@ -97,10 +97,4 @@ async def boss(ctx):
 async def anarisuto(ctx):
     await ctx.send('<@&784767086752169984>')
 
-
-
-
-
-
-
-bot.run(token)
+client.run(TOKEN)
